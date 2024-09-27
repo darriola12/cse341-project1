@@ -1,0 +1,48 @@
+### GET ALL USERS
+
+GET http://localhost:3001/api-docs/#/default/get\_
+Accept: application/json
+
+###
+
+### GET USER BY ID
+
+GET http://localhost:3001/api-docs/#/default/get*users\_\_id*
+Accept: application/json
+
+###
+
+### CREATE A NEW USER
+
+POST http://localhost:3001/api-docs/#/default/post*users*
+Content-Type: application/json
+
+{
+"firstName": "any",
+"lastName": "any",
+"email": "any",
+"phoneNumber": "any",
+"birthday": "any"
+}
+
+###
+
+### UPDDATE USER BY ID
+
+PUT http://localhost:3001/api-docs/#/default/put*users\_\_id*
+Content-Type: application/json
+{
+"firstName": "any",
+"lastName": "any",
+"email": "any",
+"phoneNumber": "any",
+"birthday": "any"
+}
+
+###
+
+### DELETE USER BY ID
+
+DELETE http://localhost:3001/api-docs/#/default/delete*users\_\_id*
+
+###
