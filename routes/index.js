@@ -1,7 +1,9 @@
-const express = require("express");
-const route = express.Router();  
+const route = require("express").Router(); 
+
+route.use("/", require("./swagger")); 
 
 route.get("/", (req, res) => {
+    //#swagger.tags={"Hello world"}
     res.send("Hello World");
 });
 
